@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sulthanul Auliya — Creative Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Aurora -->
+<div class="aurora" aria-hidden="true">
+  <div class="aurora__blob aurora__blob--1"></div>
+  <div class="aurora__blob aurora__blob--2"></div>
+  <div class="aurora__blob aurora__blob--3"></div>
+</div>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader__monogram">SA</div>
+  <div class="preloader__bar"><div class="preloader__bar-fill" id="preloaderBar"></div></div>
+  <p class="preloader__label">Memuat Pengalaman</p>
+</div>
+
+<!-- Header -->
+<header id="header">
+  <div class="logo">SA</div>
+  <nav class="navbar" id="navbar" aria-label="Navigasi utama">
+    <li><a href="#hero" class="active">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#skills">Keahlian</a></li>
+    <li><a href="#timeline">Riwayat</a></li>
+    <li><a href="#portfolio">Portofolio</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </nav>
+  <div class="nav-actions">
+    <button class="btn-theme" id="themeToggle">☀️ Light</button>
+    <button class="btn-menu" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero__content">
+    <div class="hero__tag">
+      <span class="hero__tag-dot"></span>
+      Creative Developer · Tersedia untuk proyek
+    </div>
+    <h1 class="hero__name">
+      <span class="hero__name-line">Sulthanul</span>
+      <span class="hero__name-line hero__name-accent">Auliya</span>
+    </h1>
+    <p class="hero__role">
+      <span id="typing-text">Web Developer</span>
+    </p>
+    <p class="hero__desc">
+      Membangun antarmuka digital yang elegan, responsif, dan berkesan — di persimpangan desain dan teknologi.
+    </p>
+    <div class="hero__actions">
+      <a href="#portfolio" class="btn-primary">Lihat Karya</a>
+      <a href="#contact" class="btn-ghost">Hubungi Saya</a>
+    </div>
+    <div class="hero__socials">
+      <a href="https://wa.me/6281234567890" target="_blank" class="social-pill">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326z"/></svg>
+        WhatsApp
+      </a>
+      <a href="https://instagram.com/sulthanulauliya" target="_blank" class="social-pill">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.298c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0z"/></svg>
+        Instagram
+      </a>
+      <a href="mailto:sulthanulauliya@gmail.com" class="social-pill">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Z"/></svg>
+        Email
+      </a>
+    </div>
+  </div>
+
+  <div class="hero__visual">
+    <div class="hero__photo-frame" id="heroFrame">
+      <div class="hero__photo-inner">
+        <img src="assets/images/IMG_9018.JPG.jpeg" alt="Sulthanul Auliya" 
+       style="width:100%; height:100%; object-fit:cover; object-position:center top;">
+      </div>
+    </div>
+    <div class="hero__badge">
+      <div class="hero__badge-icon">💡</div>
+      <div class="hero__badge-text">
+        <strong>Creative Dev</strong>
+        <span>UI/UX + Frontend</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about__grid">
+    <div class="reveal">
+      <div class="section-header">
+        <p class="section-overline">Tentang Saya</p>
+        <h2 class="section-title">Pembuat<br>Pengalaman Digital</h2>
+        <p class="section-desc">Saya adalah mahasiswa Sistem Informasi yang passionate terhadap antarmuka yang indah dan fungsional. Saya percaya bahwa desain yang baik adalah yang tidak terlihat — hanya terasa.</p>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <div class="about__stat-grid">
+        <div class="stat-card glass">
+          <div class="stat-card__num">3+</div>
+          <div class="stat-card__label">Tahun Belajar</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-card__num">12+</div>
+          <div class="stat-card__label">Proyek Selesai</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-card__num">5+</div>
+          <div class="stat-card__label">Sertifikasi</div>
+        </div>
+        <div class="stat-card glass">
+          <div class="stat-card__num">100%</div>
+          <div class="stat-card__label">Dedikasi Penuh</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header reveal">
+    <p class="section-overline">Keahlian</p>
+    <h2 class="section-title">Tech Stack</h2>
+  </div>
+  <div class="skills__grid" id="skillsGrid">
+    <div class="skill-card glass reveal reveal-delay-1">
+      <div class="skill-ring">
+        <svg viewBox="0 0 80 80">
+          <circle class="skill-ring__bg" cx="40" cy="40" r="35"/>
+          <circle class="skill-ring__prog" cx="40" cy="40" r="35" data-pct="90"
+            stroke="url(#g1)"/>
+          <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3a8ef6"/><stop offset="100%" stop-color="#8b5cf6"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="skill-ring__label">90%</div>
+      </div>
+      <div class="skill-icon-wrap">
+        <svg viewBox="0 0 24 24"><path fill="#E34F26" d="M1.5 22L0 2h24l-1.5 20L12 24zM4 5l1.2 14.5L12 21.7l6.8-2.2L20 5z"/></svg>
+      </div>
+      <h3>HTML5</h3>
+    </div>
+
+    <div class="skill-card glass reveal reveal-delay-2">
+      <div class="skill-ring">
+        <svg viewBox="0 0 80 80">
+          <circle class="skill-ring__bg" cx="40" cy="40" r="35"/>
+          <circle class="skill-ring__prog" cx="40" cy="40" r="35" data-pct="85"
+            stroke="url(#g2)"/>
+          <defs><linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3a8ef6"/><stop offset="100%" stop-color="#06d6a0"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="skill-ring__label">85%</div>
+      </div>
+      <div class="skill-icon-wrap">
+        <svg viewBox="0 0 24 24"><path fill="#1572B6" d="M1.5 22L0 2h24l-1.5 20L12 24zM7.8 8.5l.2 2.5h8l-.3 3.5-3.7 1.2-3.7-1.2-.2-2.5H5.9l.4 5.5 5.7 1.8 5.7-1.8.8-9.2z"/></svg>
+      </div>
+      <h3>CSS3</h3>
+    </div>
+
+    <div class="skill-card glass reveal reveal-delay-3">
+      <div class="skill-ring">
+        <svg viewBox="0 0 80 80">
+          <circle class="skill-ring__bg" cx="40" cy="40" r="35"/>
+          <circle class="skill-ring__prog" cx="40" cy="40" r="35" data-pct="80"
+            stroke="url(#g3)"/>
+          <defs><linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f7df1e"/><stop offset="100%" stop-color="#f0a500"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="skill-ring__label">80%</div>
+      </div>
+      <div class="skill-icon-wrap">
+        <svg viewBox="0 0 24 24"><path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+      </div>
+      <h3>JavaScript</h3>
+    </div>
+
+    <div class="skill-card glass reveal reveal-delay-4">
+      <div class="skill-ring">
+        <svg viewBox="0 0 80 80">
+          <circle class="skill-ring__bg" cx="40" cy="40" r="35"/>
+          <circle class="skill-ring__prog" cx="40" cy="40" r="35" data-pct="75"
+            stroke="url(#g4)"/>
+          <defs><linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#ec4899"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="skill-ring__label">75%</div>
+      </div>
+      <div class="skill-icon-wrap">
+        <svg viewBox="0 0 24 24"><path fill="#A259FF" d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1 0 7H12V2zm-6.5 8H12v7H5.5a3.5 3.5 0 1 1 0-7zM18 14.5a3.5 3.5 0 1 1-7 0v-3.5h3.5a3.5 3.5 0 0 1 3.5 3.5z"/></svg>
+      </div>
+      <h3>Figma</h3>
+    </div>
+
+    <div class="skill-card glass reveal reveal-delay-1">
+      <div class="skill-ring">
+        <svg viewBox="0 0 80 80">
+          <circle class="skill-ring__bg" cx="40" cy="40" r="35"/>
+          <circle class="skill-ring__prog" cx="40" cy="40" r="35" data-pct="70"
+            stroke="url(#g5)"/>
+          <defs><linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#06d6a0"/><stop offset="100%" stop-color="#3a8ef6"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="skill-ring__label">70%</div>
+      </div>
+      <div class="skill-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="#61DAFB"><path d="M12 9.861A2.139 2.139 0 1 0 12 14.14 2.139 2.139 0 1 0 12 9.861zM6.008 16.255l-.472-.12C2.018 15.246 0 13.737 0 11.996s2.018-3.25 5.536-4.139l.472-.12.12.472a21.079 21.079 0 0 0 1.19 3.407l.047.11-.047.11a21.078 21.078 0 0 0-1.19 3.407l-.12.512zm.936-6.68c-2.722.7-4.2 1.97-4.2 2.42s1.478 1.72 4.2 2.42a23.268 23.268 0 0 1 1.01-2.42 23.268 23.268 0 0 1-1.01-2.42z"/></svg>
+      </div>
+      <h3>React</h3>
+    </div>
+
+    <div class="skill-card glass reveal reveal-delay-2">
+      <div class="skill-ring">
+        <svg viewBox="0 0 80 80">
+          <circle class="skill-ring__bg" cx="40" cy="40" r="35"/>
+          <circle class="skill-ring__prog" cx="40" cy="40" r="35" data-pct="78"
+            stroke="url(#g6)"/>
+          <defs><linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FF9900"/><stop offset="100%" stop-color="#ff6b35"/>
+          </linearGradient></defs>
+        </svg>
+        <div class="skill-ring__label">78%</div>
+      </div>
+      <div class="skill-icon-wrap">
+        <svg viewBox="0 0 24 24"><path fill="#FF9900" d="M20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9h-5v7h-2v-7H5V9h5V4h2v5h5v2z"/></svg>
+      </div>
+      <h3>Marketing</h3>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline">
+  <div class="section-header reveal">
+    <p class="section-overline">Riwayat</p>
+    <h2 class="section-title">Perjalanan</h2>
+  </div>
+  <div class="timeline-wrap">
+    <div class="timeline-line"></div>
+
+    <div class="timeline-item reveal reveal-delay-1">
+      <div class="timeline-dot glass">
+        <svg viewBox="0 0 24 24"><path fill="#3a8ef6" d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+      </div>
+      <div class="timeline-card glass">
+        <span class="timeline-badge badge-edu">2024 — Sekarang</span>
+        <h3>S1 Sistem Informasi</h3>
+        <h4>Universitas Internasional Semen Indonesia</h4>
+        <p>Fokus pada pengembangan aplikasi web, algoritma, serta interaksi manusia dan komputer. Aktif di laboratorium komputasi.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-2">
+      <div class="timeline-dot glass">
+        <svg viewBox="0 0 24 24"><path fill="#06d6a0" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+      </div>
+      <div class="timeline-card glass">
+        <span class="timeline-badge badge-work">2026</span>
+        <h3>Tim Teknis CBT SMP IT AL Ibra</h3>
+        <h4>UISI x SMP IT AL Ibra</h4>
+        <p>Menganalisis Resiko, Bug, dan Error pada CBT Sekolah.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal reveal-delay-3">
+      <div class="timeline-dot glass">
+        <svg viewBox="0 0 24 24"><path fill="#8b5cf6" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+      </div>
+      <div class="timeline-card glass">
+        <span class="timeline-badge badge-cert">2024</span>
+        <h3>Independent Certified UI/UX</h3>
+        <h4>Apple Developer Academy Program</h4>
+        <p>Menyelesaikan studi perancangan arsitektur informasi aplikasi iOS, micro-interactions, serta pembuatan prototipe interaktif tingkat lanjut.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-header reveal">
+    <p class="section-overline">Portofolio</p>
+    <h2 class="section-title">Karya Pilihan</h2>
+    <p class="section-desc">Klik proyek untuk melihat detail. Klik lagi untuk kembali.</p>
+  </div>
+  <div class="portfolio__grid" id="portfolioGrid">
+    <div class="portfolio-card reveal reveal-delay-1" data-project="1">
+      <div class="portfolio-img">
+        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop&q=70" alt="E-Commerce Dashboard" loading="lazy">
+        <div class="portfolio-overlay"></div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">Aplikasi</span>
+        <h3>Dashboard RUKUN</h3>
+        <p>Sistem Monitoring Sampah Tingkat Desa.</p>
+        <a href="#" class="portfolio-link">Lihat Proyek →</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal reveal-delay-2" data-project="2">
+      <div class="portfolio-img">
+        <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=600&auto=format&fit=crop&q=70" alt="SaaS Landing" loading="lazy">
+        <div class="portfolio-overlay"></div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">Website</span>
+        <h3>Kenyang.in</h3>
+        <p>Forum Berbasi Website Sebagai Informasi Makanan Murah Gresik.</p>
+        <a href="#" class="portfolio-link">Lihat Proyek →</a>
+      </div>
+    </div>
+
+    <div class="portfolio-card reveal reveal-delay-3" data-project="3">
+      <div class="portfolio-img">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=70" alt="Finance App" loading="lazy">
+        <div class="portfolio-overlay"></div>
+      </div>
+      <div class="portfolio-info">
+        <span class="portfolio-tag">UI/UX Case Study</span>
+        <h3>Mobile Finance App</h3>
+        <p>Studi kasus UI/UX mendalam mengenai sistem manajemen keuangan personal gen-Z yang intuitif.</p>
+        <a href="#" class="portfolio-link">Lihat Proyek →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <p class="section-overline">Kontak</p>
+    <h2 class="section-title">Mari Berkolaborasi</h2>
+  </div>
+  <div class="contact__wrap">
+    <div class="reveal reveal-delay-1">
+      <div class="contact__info">
+        <h3>Ada proyek<br>menarik?</h3>
+        <p>Saya terbuka untuk diskusi, kolaborasi, maupun peluang baru. Jangan ragu untuk menghubungi saya melalui form atau kanal di bawah ini.</p>
+        <div class="contact__channels">
+          <a href="https://wa.me/6285730727119" target="_blank" class="contact__channel">
+            <div class="contact__channel-icon icon-wa">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326z"/></svg>
+            </div>
+            WhatsApp
+          </a>
+          <a href="https://instagram.com/sulthannn.___" target="_blank" class="contact__channel">
+            <div class="contact__channel-icon icon-ig">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.444-.048-3.298c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0z"/></svg>
+            </div>
+            Instagram @sulthannn.___
+          </a>
+          <a href="mailto:sulthanul.auliya24@student.uisi.ac.id" class="contact__channel">
+            <div class="contact__channel-icon icon-mail">
+              <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Z"/></svg>
+            </div>
+            sulthanul.auliya24@student.uisi.ac.id
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div class="contact__form-wrap glass">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Nama</label>
+              <input type="text" id="name" required placeholder="Nama lengkap">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="nama@email.com">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="message">Pesan</label>
+            <textarea id="message" required placeholder="Ceritakan tentang proyek Anda..."></textarea>
+          </div>
+          <button type="submit" class="btn-send">Kirim Pesan ↗</button>
+          <div class="success-banner" id="successMsg">✓ Pesan berhasil dikirim! Saya akan segera membalas.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Sulthanul Auliya. Dibuat dengan 💙 dan CSS murni.</p>
+  <div class="footer__links">
+    <a href="#hero">Beranda</a>
+    <a href="#about">Tentang</a>
+    <a href="#portfolio">Karya</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
